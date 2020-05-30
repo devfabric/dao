@@ -1,0 +1,11 @@
+Type = "mysql"
+DataSource = "root:Zsba@mysql2018*@tcp(127.0.0.1:3306)/switch?charset=utf8&parseTime=true"
+MaxIdle = 30
+MaxOpen = 30
+IsLoger = true
+
+[TLS]
+  Enabled = false
+  CertFile = "db_client.pem"
+  KeyFile = "db_client.key"
+  CaCert = "db_ca.pem"
